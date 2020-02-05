@@ -2,3 +2,66 @@
   box-shadow: 0px 5px 10px 1px black;
   background-color: antiquewhite;  
 }
+// registeration Form
+
+<div class="container  my-4 p-3">
+    <form onSubmit=onSubmit()>
+      <div class="row ">
+            <div class="col-md-4"></div> 
+            <div class="col-md-4 px-4 py-4 addform">
+                        <h1 class="mb-4"> Registration</h1>
+                        <label class="label control-label col-md-4 py-2 ">  Full Name  </label>
+                        <input type="text" class="col-md-7" name="name"
+                              value=""
+                               onChange={this.onChange}
+                        />
+                        
+                        <label class=" label control-label  col-md-4 py-2"> Email  </label>
+                        <input type="email" class="col-md-7" name="email"
+                                 value=""
+                                 onChange={this.onChange}
+                        />          
+                        
+                    
+                        <label class="label control-label col-md-4 py-2 "> Phone Number  </label>
+                        <input type="text" class="col-md-7" name="phone"
+                              value=""
+                              onChange={this.onChange}
+                        />
+                        
+                        <label class="label control-label col-md-4 py-2"> Role  </label>
+                        <input type="number" class="col-md-7" name="role" 
+                                value=""
+                                onChange={this.onChange}
+                        />
+                    
+                        <label class="label control-label col-md-4 py-2"> User Id  </label>
+                        <input type="text" class="col-md-7" name="userId" 
+                                value=""
+                                onChange={this.onChange}
+                        />
+                    
+                        <label class="label control-label col-md-4 py-2"> User Name  </label>
+                        <input type="text" class="col-md-7" name="userName"
+                                value=""
+                                onChange={this.onChange}
+                        />
+
+                        <label class="label control-label col-md-4 py-2"> Password  </label>
+                        <input type="password" class="col-md-7" name="password" id="password"
+                                value=""
+                                onChange={this.onChange}
+                        />
+                        <label class="label control-label col-md-4 py-2"> Confirm Password  </label>
+                        <input type="password" class="col-md-7" id="confirmpassword"
+                                value=""
+                                onChange={this.onChange}
+                        />
+
+                    <input class="btn btn-dark col-md " type="submit" />
+            </div>
+            <div class="col-md-4"></div> 
+      </div>
+    </form>
+  </div>
+//link     https://angular.io/guide/forms
